@@ -95,6 +95,10 @@ const mostrarFooter = () => {
     clone.querySelector("span").textContent = total
     // no es necesario ocupar el fragment, por que no hay una iteración, se puede pasar directo del clone al footer, a traves del método appendChild()
     footer.appendChild(clone)
+    if(total === 0){
+        console.log("Aqui hay que hacer desaparecer el footer")
+        
+    }
 }
 
 const btnAumentar = (e) => {
